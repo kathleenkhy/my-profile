@@ -171,7 +171,7 @@ function Projects() {
 
 function Contact() {
   return (
-    <VStack align="stretch">
+    <VStack align="stretch" mb={20}>
       <Heading>Find me here:</Heading>
       <HStack>
         <Button colorScheme="gray" size="lg">
@@ -221,7 +221,7 @@ export default function PortfolioPage() {
   return (
     <>
       <Head>
-        <title>Portfolio Page</title>
+        <title>Kathleen&apos;s Portfolio</title>
         <meta
           name="description"
           content="This is a sample portfolio page"
