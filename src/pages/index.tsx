@@ -1,5 +1,7 @@
 import Head from 'next/head'
+import NextLink from 'next/link'
 import {
+  Box,
   Card,
   CardHeader,
   CardBody,
@@ -10,29 +12,61 @@ import {
   VStack,
   UnorderedList,
   ListItem,
+  Spacer,
+  Flex,
 } from '@chakra-ui/react'
 import { Link, Button } from '@opengovsg/design-system-react'
+import Navbar from '~/components/navbar'
+import { IoLogoGithub } from 'react-icons/io5'
+import { FaLinkedin } from 'react-icons/fa'
 
 function Hero() {
   return (
-    <VStack align="stretch">
-      <Heading size="2xl">Hello there!</Heading>
-      <Text>
-        I am a software engineer at{' '}
-        <Link href="https://open.gov.sg" target="_blank" fontWeight="bold">
-          Open Government Products
-        </Link>
-        . I build tech for public good!
-      </Text>
-      <HStack>
-        <Button variant="link" href="https://github.com">
-          Github
-        </Button>
-        <Button variant="link" href="https://linkedin.com">
-          Linkedin
-        </Button>
-      </HStack>
-    </VStack>
+    <>
+      <Flex direction="column">
+        <Navbar path="/" />
+        <VStack align="stretch">
+          <Box>
+            <Heading size="2xl">Hello there!</Heading>
+            <Text p="6px">
+              I am a software engineer at{' '}
+              <Link
+                href="https://open.gov.sg"
+                target="_blank"
+                fontWeight="bold"
+              >
+                Open Government Products
+              </Link>
+              . I build tech for public good!
+            </Text>
+          </Box>
+          <HStack>
+            <Link
+              target="_blank"
+              href="https://github.com/kathleenkhy"
+              display="inline-flex"
+              alignItems="center"
+              style={{ gap: 4 }}
+              pl={2}
+            >
+              <IoLogoGithub />
+              GitHub
+            </Link>
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/in/kathleenkohhuiying/"
+              display="inline-flex"
+              alignItems="center"
+              style={{ gap: 4 }}
+              pl={2}
+            >
+              <FaLinkedin />
+              LinkedIn
+            </Link>
+          </HStack>
+        </VStack>
+      </Flex>
+    </>
   )
 }
 
@@ -41,10 +75,10 @@ function About() {
     <VStack align="stretch">
       <Heading>About me</Heading>
       <Text>
-        Hi there! I&apos;m a full stack software engineer with over 5 years of
-        experience in developing web applications. I have a strong background in
-        both front-end and back-end development, and I&apos;m passionate about
-        building scalable and efficient systems.
+        Hi there! I&apos;m a full stack software engineer with background in
+        product management. I have a strong background in both front-end and
+        back-end development, and I&apos;m passionate about building scalable
+        and efficient systems.
       </Text>
     </VStack>
   )
@@ -60,8 +94,8 @@ function Skills() {
       </Text>
       <UnorderedList>
         <ListItem>Typescript</ListItem>
-        <ListItem>AWS</ListItem>
         <ListItem>React</ListItem>
+        <ListItem>Ruby</ListItem>
         <ListItem>Node.js</ListItem>
       </UnorderedList>
     </VStack>
@@ -81,6 +115,46 @@ function Projects() {
         <ListItem>
           <Text as="b">Project Y</Text> - I was the backend engineer that was
           working on the backend of Project Y
+        </ListItem>
+        <ListItem>
+          <Text as="b">Project Z</Text> - I was the infrastructure engineer that
+          was working on the backend of Project Z
+        </ListItem>
+      </UnorderedList>
+    </VStack>
+  )
+}
+
+function Contact() {
+  return (
+    <VStack align="stretch">
+      <Heading>Find me here:</Heading>
+      <UnorderedList flex={2}>
+        <ListItem>
+          <Link
+            target="_blank"
+            href="https://github.com/kathleenkhy"
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoLogoGithub />
+            GitHub
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/kathleenkohhuiying/"
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <FaLinkedin />
+            LinkedIn
+          </Link>
         </ListItem>
         <ListItem>
           <Text as="b">Project Z</Text> - I was the infrastructure engineer that
@@ -113,6 +187,7 @@ export default function PortfolioPage() {
           <About />
           <Skills />
           <Projects />
+          <Contact />
         </VStack>
       </Container>
     </>
