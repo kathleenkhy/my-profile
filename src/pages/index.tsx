@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import NextLink from 'next/link'
 import {
   Box,
   Card,
+  chakra,
   CardHeader,
   CardBody,
   Container,
@@ -14,12 +14,27 @@ import {
   ListItem,
   Spacer,
   Flex,
+  Menu,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
+  useColorMode,
+  useColorModeValue,
+  extendTheme,
 } from '@chakra-ui/react'
 import { Link, Button } from '@opengovsg/design-system-react'
 import Navbar from '~/components/navbar'
 import { IoLogoGithub } from 'react-icons/io5'
 import { FaLinkedin } from 'react-icons/fa'
 import { MdOutlineEmail } from 'react-icons/md'
+import Image from 'next/image'
+import isomerlogo from './isomerlogo.png'
+
+const Logos = chakra(Image, {
+  shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
+})
 
 function Hero() {
   return (
@@ -27,10 +42,14 @@ function Hero() {
       <Flex direction="column">
         <Navbar path="/" />
         <VStack align="stretch">
-          <Box>
-            <Heading size="2xl">Hello there!</Heading>
+          {/* <Box
+            textAlign="center"
+            borderRadius="lg"
+            bg={useColorModeValue('blue.50', '')}
+            mt={10}
+          >
             <Text p="6px">
-              I am a software engineer at{' '}
+              Hello! I am a software engineer at{' '}
               <Link
                 href="https://open.gov.sg"
                 target="_blank"
@@ -38,33 +57,9 @@ function Hero() {
               >
                 Open Government Products
               </Link>
-              . I build tech for public good!
+              .<br />I build tech for public good!
             </Text>
-          </Box>
-          <HStack>
-            <Link
-              target="_blank"
-              href="https://github.com/kathleenkhy"
-              display="inline-flex"
-              alignItems="center"
-              style={{ gap: 4 }}
-              pl={2}
-            >
-              <IoLogoGithub />
-              GitHub
-            </Link>
-            <Link
-              target="_blank"
-              href="https://www.linkedin.com/in/kathleenkohhuiying/"
-              display="inline-flex"
-              alignItems="center"
-              style={{ gap: 4 }}
-              pl={2}
-            >
-              <FaLinkedin />
-              LinkedIn
-            </Link>
-          </HStack>
+          </Box> */}
         </VStack>
       </Flex>
     </>
@@ -72,16 +67,27 @@ function Hero() {
 }
 
 function About() {
+  const bg = useColorModeValue('blue.50', '')
+  const color = useColorModeValue('gray.800', '')
+
   return (
-    <VStack align="stretch">
-      <Heading>About me</Heading>
-      <Text>
-        Hi there! I&apos;m a full stack software engineer with background in
-        product management. I have a strong background in both front-end and
-        back-end development, and I&apos;m passionate about building scalable
-        and efficient systems.
-      </Text>
-    </VStack>
+    <Card>
+      <CardHeader bg={bg}>
+        <Heading color={color}>Kathleen Koh</Heading>
+      </CardHeader>
+      <CardBody bg={bg}>
+        <Text color={color}>
+          Hi there! I&apos;m a full stack software engineer with background in
+          product management at{' '}
+          <Link href="https://open.gov.sg" target="_blank" fontWeight="bold">
+            Open Government Products
+          </Link>
+          . I have a strong background in both front-end and back-end
+          development, and I&apos;m passionate about building scalable and
+          efficient systems.
+        </Text>
+      </CardBody>
+    </Card>
   )
 }
 
@@ -107,50 +113,58 @@ function Projects() {
     <VStack align="stretch">
       <Heading>Projects</Heading>
       <Text>Here are some projects that I have worked on:</Text>
-      <UnorderedList>
-        <ListItem>
-          <Text as="b">
-            <Link
-              href="https://isomer.gov.sg"
-              target="_blank"
-              fontWeight="bold"
-            >
-              Isomer
-            </Link>
-          </Text>{' '}
-          - Product Manager of{' '}
-          <Link href="https://isomer.gov.sg" target="_blank" fontWeight="bold">
-            Isomer
-          </Link>
-          ; where I managed the onboarding of over 330 schools sites to our
-          platform.
-        </ListItem>
-        <ListItem>
-          <Text as="b">
+      <Tabs>
+        <TabList>
+          <Tab>Isomer</Tab>
+          <Tab>Fairfare</Tab>
+          <Tab>Form.gov.sg</Tab>
+        </TabList>
+
+        <TabPanels>
+          <TabPanel>
+            {/* <Logos
+              src="/images/isomerlogo.png"
+              alt="Isomer Logo"
+              width="100"
+              height="100"
+            /> */}
+            <p>
+              Product Manager of{' '}
+              <Link
+                href="https://isomer.gov.sg"
+                target="_blank"
+                fontWeight="bold"
+              >
+                Isomer
+              </Link>{' '}
+              where I secured the stakeholder buy-in, and managed the onboarding
+              of over 330 school sites on to our platform.
+            </p>
+          </TabPanel>
+          <TabPanel>
             <Link
               href="https://fairfare.kathleen-dev.com"
               target="_blank"
               fontWeight="bold"
             >
-              Fairfare (Bill Splitter)
+              Fairfare
             </Link>
-          </Text>{' '}
-          - Web app to help users snap a picture of their receipts, upload
-          within the app and handle the split calculations for them.
-        </ListItem>
-        <ListItem>
-          <Text as="b">
+            <span>
+              {' '}
+              is a bill splitter web app that help users snap a picture of their
+              receipts, upload within the app and handle the split calculations
+              for them.
+            </span>
+          </TabPanel>
+          <TabPanel>
+            I am currently a software developer working on{' '}
             <Link href="https://forms.gov.sg" target="_blank" fontWeight="bold">
               Forms.gov.sg
             </Link>
-          </Text>{' '}
-          - I am currently a software developer working on{' '}
-          <Link href="https://forms.gov.sg" target="_blank" fontWeight="bold">
-            Forms.gov.sg
-          </Link>
-          .
-        </ListItem>
-      </UnorderedList>
+            .
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
     </VStack>
   )
 }
@@ -159,8 +173,8 @@ function Contact() {
   return (
     <VStack align="stretch">
       <Heading>Find me here:</Heading>
-      <UnorderedList flex={2}>
-        <ListItem>
+      <HStack>
+        <Button colorScheme="gray" size="lg">
           <Link
             target="_blank"
             href="https://github.com/kathleenkhy"
@@ -172,8 +186,8 @@ function Contact() {
             <IoLogoGithub />
             GitHub
           </Link>
-        </ListItem>
-        <ListItem>
+        </Button>
+        <Button colorScheme="blue" size="lg">
           <Link
             target="_blank"
             href="https://www.linkedin.com/in/kathleenkohhuiying/"
@@ -185,8 +199,8 @@ function Contact() {
             <FaLinkedin />
             LinkedIn
           </Link>
-        </ListItem>
-        <ListItem>
+        </Button>
+        <Button colorScheme="teal" size="lg">
           <Link
             href="mailto:kathleen.khy@gmail.com"
             display="inline-flex"
@@ -197,8 +211,8 @@ function Contact() {
             <MdOutlineEmail />
             Email
           </Link>
-        </ListItem>
-      </UnorderedList>
+        </Button>
+      </HStack>
     </VStack>
   )
 }
