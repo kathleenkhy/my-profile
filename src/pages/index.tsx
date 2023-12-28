@@ -90,8 +90,7 @@ function Skills() {
     <VStack align="stretch">
       <Heading>Skills</Heading>
       <Text>
-        I work across the stack and herer are the things I&apos;m comfortable
-        at:
+        I work across the stack and here are the things I&apos;m comfortable at:
       </Text>
       <UnorderedList>
         <ListItem>Typescript</ListItem>
@@ -110,16 +109,46 @@ function Projects() {
       <Text>Here are some projects that I have worked on:</Text>
       <UnorderedList>
         <ListItem>
-          <Text as="b">Project X</Text> - I was the frontend engineer that was
-          working on the backend of Project X
+          <Text as="b">
+            <Link
+              href="https://isomer.gov.sg"
+              target="_blank"
+              fontWeight="bold"
+            >
+              Isomer
+            </Link>
+          </Text>{' '}
+          - Product Manager of{' '}
+          <Link href="https://isomer.gov.sg" target="_blank" fontWeight="bold">
+            Isomer
+          </Link>
+          ; where I managed the onboarding of over 330 schools sites to our
+          platform.
         </ListItem>
         <ListItem>
-          <Text as="b">Project Y</Text> - I was the backend engineer that was
-          working on the backend of Project Y
+          <Text as="b">
+            <Link
+              href="https://fairfare.kathleen-dev.com"
+              target="_blank"
+              fontWeight="bold"
+            >
+              Fairfare (Bill Splitter)
+            </Link>
+          </Text>{' '}
+          - Web app to help users snap a picture of their receipts, upload
+          within the app and handle the split calculations for them.
         </ListItem>
         <ListItem>
-          <Text as="b">Project Z</Text> - I was the infrastructure engineer that
-          was working on the backend of Project Z
+          <Text as="b">
+            <Link href="https://forms.gov.sg" target="_blank" fontWeight="bold">
+              Forms.gov.sg
+            </Link>
+          </Text>{' '}
+          - I am currently a software developer working on{' '}
+          <Link href="https://forms.gov.sg" target="_blank" fontWeight="bold">
+            Forms.gov.sg
+          </Link>
+          .
         </ListItem>
       </UnorderedList>
     </VStack>
