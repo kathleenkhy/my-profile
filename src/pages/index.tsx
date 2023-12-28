@@ -19,6 +19,7 @@ import { Link, Button } from '@opengovsg/design-system-react'
 import Navbar from '~/components/navbar'
 import { IoLogoGithub } from 'react-icons/io5'
 import { FaLinkedin } from 'react-icons/fa'
+import { MdOutlineEmail } from 'react-icons/md'
 
 function Hero() {
   return (
@@ -157,8 +158,16 @@ function Contact() {
           </Link>
         </ListItem>
         <ListItem>
-          <Text as="b">Project Z</Text> - I was the infrastructure engineer that
-          was working on the backend of Project Z
+          <Link
+            href="mailto:kathleen.khy@gmail.com"
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <MdOutlineEmail />
+            Email
+          </Link>
         </ListItem>
       </UnorderedList>
     </VStack>

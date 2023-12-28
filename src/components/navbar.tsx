@@ -44,14 +44,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
       zIndex={2}
       {...props}
     >
-      <Container
-        display="flex"
-        p={2}
-        maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
-      >
+      <Container display="flex" p={2} maxW="container.md">
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
@@ -59,9 +52,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
-        >
-        </Stack>
-
+        ></Stack>
         <Box alignItems="flex-end">
           <ThemeToggleButton />
 
