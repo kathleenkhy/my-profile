@@ -19,7 +19,7 @@ export default function About() {
       <CardHeader>
         <Flex alignItems="center" flexDirection={{ base: 'column', md: 'row' }}>
           <Image
-            src="/Kathleen.jpg"
+            src="/kathleen-profile.jpg"
             alt="Profile image"
             borderRadius="full"
             width="150"
