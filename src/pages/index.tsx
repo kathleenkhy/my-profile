@@ -14,7 +14,6 @@ import {
   ListItem,
   Spacer,
   Flex,
-  Menu,
   Tabs,
   TabList,
   TabPanels,
@@ -23,6 +22,7 @@ import {
   useColorMode,
   useColorModeValue,
   extendTheme,
+  useTheme,
 } from '@chakra-ui/react'
 import { Link, Button } from '@opengovsg/design-system-react'
 import Navbar from '~/components/navbar'
@@ -33,7 +33,8 @@ import Image from 'next/image'
 import isomerlogo from './isomerlogo.png'
 
 const Logos = chakra(Image, {
-  shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
+  shouldForwardProp: (prop) =>
+    ['width', 'height', 'src', 'alt', 'bg'].includes(prop),
 })
 
 function Hero() {
@@ -82,9 +83,9 @@ function About() {
           <Link href="https://open.gov.sg" target="_blank" fontWeight="bold">
             Open Government Products
           </Link>
-          . I have a strong background in both front-end and back-end
-          development, and I&apos;m passionate about building scalable and
-          efficient systems.
+          . I have a background in both front-end and back-end development, and
+          I&apos;m passionate about building scalable and efficient systems to
+          create an impact for public good.
         </Text>
       </CardBody>
     </Card>
@@ -122,12 +123,16 @@ function Projects() {
 
         <TabPanels>
           <TabPanel>
-            {/* <Logos
-              src="/images/isomerlogo.png"
+            <Logos
+              src="/isomerlogo.png"
               alt="Isomer Logo"
-              width="100"
-              height="100"
-            /> */}
+              width="170"
+              height="59"
+              my={4}
+              bg={useColorModeValue('white', 'gray.300')}
+              p={2}
+              borderRadius={10}
+            />
             <p>
               Product Manager of{' '}
               <Link
@@ -137,8 +142,11 @@ function Projects() {
               >
                 Isomer
               </Link>{' '}
-              where I secured the stakeholder buy-in, and managed the onboarding
-              of over 330 school sites on to our platform.
+              which is a website builder for the Government.
+              <br />
+              While managing Isomer, I secured the stakeholder buy-in, and
+              managed the onboarding of over 330 school sites on to our
+              platform.
             </p>
           </TabPanel>
           <TabPanel>
