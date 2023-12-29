@@ -6,6 +6,8 @@ import {
   Link,
   Text,
   useColorModeValue,
+  Image,
+  Flex,
 } from '@chakra-ui/react'
 
 export default function About() {
@@ -13,9 +15,19 @@ export default function About() {
   const color = useColorModeValue('gray.800', '')
 
   return (
-    <Card>
-      <CardHeader bg={bg}>
-        <Heading color={color}>Kathleen Koh</Heading>
+    <Card px={10} py={5} bg={bg}>
+      <CardHeader>
+        <Flex alignItems="center" flexDirection={{ base: 'column', md: 'row' }}>
+          <Image
+            src="/Kathleen.jpg"
+            alt="Profile image"
+            borderRadius="full"
+            width="150"
+            height="150"
+            me={{ base: 0, md: 9 }}
+          />
+          <Heading color={color}>Kathleen Koh</Heading>
+        </Flex>
       </CardHeader>
       <CardBody bg={bg}>
         <Text color={color}>

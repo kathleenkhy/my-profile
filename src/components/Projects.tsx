@@ -52,8 +52,8 @@ export default function Projects() {
               </Link>{' '}
               which is a website builder for the Government.
               <br />
-              While managing Isomer, I secured the stakeholder buy-in, and
-              managed the onboarding of over 330 school sites on to our
+              While managing Isomer, I successfully obtained stakeholder buy-in,
+              and oversaw the onboarding of over 330 school sites on to our
               platform.
             </p>
           </TabPanel>
