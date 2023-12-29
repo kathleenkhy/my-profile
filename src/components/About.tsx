@@ -25,6 +25,7 @@ export default function About() {
             width="150"
             height="150"
             me={{ base: 0, md: 9 }}
+            mb={{ base: 5, md: 0 }}
           />
           <Heading color={color}>Kathleen Koh</Heading>
         </Flex>
