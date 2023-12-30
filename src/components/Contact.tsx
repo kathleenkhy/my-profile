@@ -6,7 +6,7 @@ import { MdOutlineEmail } from 'react-icons/md'
 export default function Contact() {
   return (
     <VStack align="stretch" mb={20}>
-      <Heading>Find me here:</Heading>
+      <Heading mb={3}>Find me here:</Heading>
       <HStack>
         <Button colorScheme="gray" size="lg">
           <Link
