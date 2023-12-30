@@ -16,7 +16,7 @@ export default function Skills() {
   return (
     <VStack align="stretch">
       <Heading>Skills</Heading>
-      <Text>
+      <Text mb={5}>
         I work across the stack and here are the things I&apos;m currently
         working with:
       </Text>
