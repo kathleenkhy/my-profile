@@ -21,7 +21,15 @@ export default function Skills() {
         working with:
       </Text>
       <Flex>
-        <div style={{ position: 'relative', marginRight: 15, marginLeft: 9 }}>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            marginRight: 10,
+            marginLeft: 9,
+          }}
+        >
           <SiJavascript
             style={{
               fontSize: '53px',
@@ -30,23 +38,17 @@ export default function Skills() {
               border: '1px solid black',
             }}
           />
-          <span
-            style={{
-              position: 'absolute',
-              top: '-30px',
-              left: '50%',
-              transform: 'translateX(-50%)',
-              backgroundColor: 'white',
-              padding: '5px',
-              border: '1px solid black',
-              borderRadius: '5px',
-              display: 'none',
-            }}
-          >
-            javascript
-          </span>
+          <p>JavaScript</p>
         </div>
-        <div style={{ position: 'relative', marginRight: 9, marginLeft: 9 }}>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            marginRight: 9,
+            marginLeft: 9,
+          }}
+        >
           <SiTypescript
             style={{
               fontSize: '53px',
@@ -55,58 +57,31 @@ export default function Skills() {
               borderRadius: '5px',
             }}
           />
-          <span
-            style={{
-              position: 'absolute',
-              top: '-30px',
-              left: '50%',
-              transform: 'translateX(-50%)',
-              color: 'blue',
-              backgroundColor: 'white',
-              padding: '5px',
-              border: '1px solid black',
-              display: 'none',
-            }}
-          >
-            typescript
-          </span>
+          TypeScript
         </div>
-        <div style={{ position: 'relative', marginRight: 9, marginLeft: 9 }}>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            marginRight: 9,
+            marginLeft: 9,
+          }}
+        >
           <SiReact style={{ fontSize: '55px', fill: '#61DBFB' }} />
-          <span
-            style={{
-              position: 'absolute',
-              top: '-30px',
-              left: '50%',
-              transform: 'translateX(-50%)',
-              backgroundColor: 'white',
-              padding: '5px',
-              border: '1px solid black',
-              borderRadius: '5px',
-              display: 'none',
-            }}
-          >
-            react
-          </span>
+          React
         </div>
-        <div style={{ position: 'relative', marginLeft: 9 }}>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            marginLeft: 9,
+            justifyContent: 'space-between',
+          }}
+        >
           <SiRuby style={{ fontSize: '48px', fill: '#820C02' }} />
-          <span
-            style={{
-              position: 'absolute',
-              top: '-30px',
-              left: '50%',
-              transform: 'translateX(-50%)',
-              color: 'blue',
-              backgroundColor: 'white',
-              padding: '5px',
-              border: '1px solid black',
-              borderRadius: '5px',
-              display: 'none',
-            }}
-          >
-            ruby
-          </span>
+          <p>Ruby</p>
         </div>
       </Flex>
     </VStack>
