@@ -77,7 +77,7 @@ export default function Projects() {
             <Link href="https://forms.gov.sg" target="_blank" fontWeight="bold">
               Forms.gov.sg
             </Link>
-            .
+            , a form builder for the Government.
           </TabPanel>
         </TabPanels>
       </Tabs>
