@@ -27,7 +27,7 @@ export default function Projects() {
         <TabList>
           <Tab>Isomer</Tab>
           <Tab>Fairfare</Tab>
-          <Tab>Form.gov.sg</Tab>
+          <Tab>FormSG</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
@@ -75,7 +75,7 @@ export default function Projects() {
           <TabPanel>
             I am currently a software developer working on{' '}
             <Link href="https://forms.gov.sg" target="_blank" fontWeight="bold">
-              Forms.gov.sg
+              FormSG
             </Link>
             , a form builder for the Government.
           </TabPanel>

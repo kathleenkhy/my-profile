@@ -74,12 +74,6 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                 >
                   LinkedIn
                 </MenuItem>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
-                >
-                  View Source
-                </MenuItem>
               </MenuList>
             </Menu>
           </Box>
