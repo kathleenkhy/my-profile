@@ -10,9 +10,9 @@ export default function Contact() {
           src="https://docs.google.com/forms/d/e/1FAIpQLSf7uEyHYK1_0NOoY2n5F_M5GrtKHX1dka1Pe0nEJNwvQ7MtxA/viewform?embedded=true"
           width="auto"
           height="800vh"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
+          frameBorder={0}
+          marginHeight={0}
+          marginWidth={0}
         >
           Loading…
         </iframe>

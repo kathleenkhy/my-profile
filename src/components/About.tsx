@@ -10,7 +10,7 @@ import {
   createIcon,
 } from '@chakra-ui/react'
 
-export default function Header({ color }) {
+export default function Header() {
   const profile = {
     headerName: `Hi there, I'm Kathleen`,
     headerRole: `I'm a Product Owner`,
@@ -22,13 +22,6 @@ export default function Header({ color }) {
   }
   return (
     <>
-      <Heading>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
-          rel="stylesheet"
-        />
-      </Heading>
-
       <Container maxW={'3xl'} id="hero">
         <Stack
           as={Box}
@@ -61,7 +54,7 @@ export default function Header({ color }) {
             position={'relative'}
           >
             <Button
-              colorScheme={color}
+              // colorScheme={color}
               bg={`teal.400`}
               rounded={'full'}
               px={6}
