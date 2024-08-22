@@ -5,10 +5,10 @@ import App, { AppProps, AppContext } from 'next/app'
 import { ThemeProvider } from '@opengovsg/design-system-react'
 import { theme } from '~/theme'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
+      <Component {...pageProps} key={router.route} />
     </ThemeProvider>
   )
 }

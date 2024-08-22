@@ -1,6 +1,7 @@
 import React from 'react'
 import { forwardRef } from 'react'
 import NextLink from 'next/link'
+import { MdHouse } from 'react-icons/md'
 import {
   Container,
   Box,
@@ -44,40 +45,65 @@ const Navbar: React.FC<NavbarProps> = (props) => {
       zIndex={2}
       {...props}
     >
-      <Container display="flex" p={2} maxW="container.md">
+      <Container
+        display="flex"
+        p={2}
+        maxW="container.md"
+        alignItems="center"
+        justifyContent="space-between"
+      >
+        <Stack>
+          <NextLink
+            href="/"
+            style={{ textDecoration: 'none', cursor: 'pointer' }}
+          >
+            <Box as={MdHouse} size="40px" />
+          </NextLink>
+        </Stack>
         <Stack
-          direction={{ base: 'column', md: 'row' }}
-          display={{ base: 'none', md: 'flex' }}
-          width={{ base: 'full', md: 'auto' }}
-          alignItems="center"
-          flexGrow={1}
+          // direction={{ base: 'column' }}
+          flexDir={'column'}
+          // display={{ base: 'none', md: 'flex' }}
+          width="full"
+          alignItems="flex-end"
+          // // flexGrow={1}
           mt={{ base: 4, md: 0 }}
-        ></Stack>
-        <Box alignItems="flex-end">
-          <ThemeToggleButton />
+        >
+          <Box>
+            <ThemeToggleButton />
 
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu isLazy id="navbar-menu">
-              <MenuButton
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
-              />
-              <MenuList>
-                <MenuItem as={MenuLink} href="https://github.com/kathleenkhy">
-                  GitHub
-                </MenuItem>
-                <MenuItem
-                  as={MenuLink}
-                  href="https://www.linkedin.com/in/kathleenkohhuiying/"
-                >
-                  LinkedIn
-                </MenuItem>
-              </MenuList>
-            </Menu>
+            <Box ml={2} display={{ base: 'inline-block' }}>
+              <Menu isLazy id="navbar-menu">
+                <MenuButton
+                  as={IconButton}
+                  icon={<HamburgerIcon />}
+                  variant="outline"
+                  aria-label="Options"
+                />
+                <MenuList>
+                  <MenuItem as={NextLink} href="/">
+                    Home
+                  </MenuItem>
+                  <MenuItem as={NextLink} href="/about">
+                    About
+                  </MenuItem>
+                  <MenuItem as={NextLink} href="/experience">
+                    Experience
+                  </MenuItem>
+                  <MenuItem as={NextLink} href="/contact">
+                    Contact
+                  </MenuItem>
+                  <MenuItem
+                    as={MenuLink}
+                    href="https://www.linkedin.com/in/kathleenkohhuiying/"
+                  >
+                    LinkedIn
+                  </MenuItem>
+                </MenuList>
+              </Menu>
+            </Box>
           </Box>
-        </Box>
+        </Stack>
       </Container>
     </Box>
   )

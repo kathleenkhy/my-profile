@@ -73,11 +73,14 @@ export default function Projects() {
             </span>
           </TabPanel>
           <TabPanel>
-            I am currently a software developer working on{' '}
+            I was previously a software developer working on{' '}
             <Link href="https://forms.gov.sg" target="_blank" fontWeight="bold">
               FormSG
             </Link>
-            , a form builder for the Government.
+            , a form builder for the Government. <br />
+            Some features built included AI-based form features (integrated with
+            Azure OpenAI) to build forms based on one-liner prompts or PDF
+            uploads.
           </TabPanel>
         </TabPanels>
       </Tabs>
