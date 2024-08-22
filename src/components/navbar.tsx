@@ -94,8 +94,10 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                     Contact
                   </MenuItem>
                   <MenuItem
-                    as={MenuLink}
+                    as="a"
                     href="https://www.linkedin.com/in/kathleenkohhuiying/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     LinkedIn
                   </MenuItem>

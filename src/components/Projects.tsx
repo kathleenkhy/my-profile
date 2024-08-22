@@ -47,6 +47,7 @@ export default function Projects() {
                 href="https://isomer.gov.sg"
                 target="_blank"
                 fontWeight="bold"
+                color={'teal.400'}
               >
                 Isomer
               </Link>{' '}
@@ -62,6 +63,7 @@ export default function Projects() {
               href="https://fairfare.kathleen-dev.com"
               target="_blank"
               fontWeight="bold"
+              color={'teal.400'}
             >
               Fairfare
             </Link>
@@ -74,10 +76,15 @@ export default function Projects() {
           </TabPanel>
           <TabPanel>
             I was previously a software developer working on{' '}
-            <Link href="https://forms.gov.sg" target="_blank" fontWeight="bold">
+            <Link
+              href="https://forms.gov.sg"
+              target="_blank"
+              fontWeight="bold"
+              color={'teal.400'}
+            >
               FormSG
             </Link>
-            , a form builder for the Government. <br />
+            , a form builder for the Government. <br /> <br />
             Some features built included AI-based form features (integrated with
             Azure OpenAI) to build forms based on one-liner prompts or PDF
             uploads.
