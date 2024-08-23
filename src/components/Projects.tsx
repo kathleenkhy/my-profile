@@ -70,8 +70,8 @@ export default function Projects() {
             <span>
               {' '}
               is a bill splitter web app that help users snap a picture of their
-              receipts, upload within the app and handle the split calculations
-              for them.
+              receipts, upload the photo of the receipt within the app and
+              handle the split calculations for them.
             </span>
           </TabPanel>
           <TabPanel>
@@ -86,7 +86,7 @@ export default function Projects() {
             </Link>
             , a form builder for the Government. <br /> <br />
             Some features built included AI-based form features (integrated with
-            Azure OpenAI) to build forms based on one-liner prompts or PDF
+            Azure OpenAI) to generate forms based on one-liner prompts or PDF
             uploads.
           </TabPanel>
         </TabPanels>

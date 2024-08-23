@@ -10,16 +10,17 @@ import {
   createIcon,
 } from '@chakra-ui/react'
 
+const profile = {
+  headerName: `Hi there, I'm Kathleen`,
+  headerRole: `I'm a Product Owner`,
+  headerDesc: 'Currently working on EDUCARE in Boston Scientific',
+  link: '/about',
+}
+export const moreButton = (link: string): void => {
+  window.location.href = `${link}`
+}
+
 export default function Header() {
-  const profile = {
-    headerName: `Hi there, I'm Kathleen`,
-    headerRole: `I'm a Product Owner`,
-    headerDesc: 'Currently working on EDUCARE in Boston Scientific',
-    link: '/experience',
-  }
-  const linkedin = () => {
-    window.location.href = `${profile.link}`
-  }
   return (
     <>
       <Container maxW={'3xl'} id="hero">
@@ -32,7 +33,7 @@ export default function Header() {
         >
           <Heading
             fontWeight={600}
-            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+            fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}
           >
             {profile.headerName} <br />
@@ -61,7 +62,7 @@ export default function Header() {
               _hover={{
                 bg: `teal`,
               }}
-              onClick={linkedin}
+              onClick={() => moreButton(profile.link)}
             >
               Find out more about me!
             </Button>

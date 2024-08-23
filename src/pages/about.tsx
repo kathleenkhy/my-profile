@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import { Container, VStack } from '@chakra-ui/react'
+import { Box, Container, Stack, VStack } from '@chakra-ui/react'
 import { Link, Button } from '@opengovsg/design-system-react'
 import Hero from '../components/Hero'
+import Contact from '~/components/Contact'
 import Details from '~/components/Details'
 
 export default function About() {
@@ -24,6 +25,9 @@ export default function About() {
         <VStack align="stretch" spacing={8}>
           <Hero />
           <Details />
+        </VStack>
+        <VStack my="12">
+          <Contact />
         </VStack>
       </Container>
     </>

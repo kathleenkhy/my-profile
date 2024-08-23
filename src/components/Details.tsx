@@ -8,7 +8,10 @@ import {
   useColorModeValue,
   Image,
   Flex,
+  Stack,
+  Button,
 } from '@chakra-ui/react'
+import { moreButton } from './About'
 
 export default function Details() {
   const bg = useColorModeValue('blue.50', '')
@@ -32,15 +35,42 @@ export default function Details() {
       </CardHeader>
       <CardBody bg={bg}>
         <Text color={color}>
-          Hi there! I&apos;m a full stack software engineer with background in
-          product management at{' '}
-          <Link href="https://open.gov.sg" target="_blank" fontWeight="bold">
-            Open Government Products
-          </Link>
-          . I have a background in both front-end and back-end development, and
+          Hi there! I&apos;m a currently a Product Owner for{' '}
+          <Link
+            href="https://educare.bostonscientific.com/apac/s/?language=en_US&sc=apac"
+            target="_blank"
+            fontWeight="bold"
+          >
+            EDUCARE
+          </Link>{' '}
+          with background in product management and some software development.
           I&apos;m passionate about building scalable and efficient systems to
-          create an impact for public good.
+          create an impact for public good. <br /> <br />
+          In my free time, I enjoy watching musical and plays, as well as
+          playing boardgames (some personal favourites include Dominion and
+          Cascadia)!
         </Text>
+        <Stack
+          direction={'column'}
+          spacing={3}
+          align={'center'}
+          alignSelf={'center'}
+          position={'relative'}
+          mt="12"
+        >
+          <Button
+            // colorScheme={color}
+            bg={`teal.400`}
+            rounded={'full'}
+            px={6}
+            _hover={{
+              bg: `teal`,
+            }}
+            onClick={() => moreButton('/experience')}
+          >
+            Find out more about my experience!
+          </Button>
+        </Stack>
       </CardBody>
     </Card>
   )

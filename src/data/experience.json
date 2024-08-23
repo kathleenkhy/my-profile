@@ -1,0 +1,96 @@
+[
+  {
+    "role": "Product Owner",
+    "company": "Boston Scientific",
+    "company_url": "https://www.bostonscientific.com/en-US/home.html",
+    "start_date": "November 2023",
+    "end_date": "",
+    "duration": "",
+    "location": "Singapore",
+    "work_type": "Hybrid",
+    "role_description": [
+      "Currently working on EDUCARE in APAC to improve the learning experience for Healthcare Professionals!"
+    ],
+    "tech_stack": []
+  },
+  {
+    "role": "Software Developer",
+    "company": "Open Government Products",
+    "company_url": "https://www.open.gov.sg/",
+    "start_date": "April 2023",
+    "end_date": "September 2023",
+    "duration": "",
+    "location": "Singapore",
+    "work_type": "Hybrid/ Remote",
+    "role_description": [
+      "Dabbled with Frontend web development for to cater for payment-related features within a form builder system.",
+      "Built AI-based form features (integrated with Azure OpenAI) to generate forms based on one-liner prompts or PDF uploads."
+    ],
+    "tech_stack": ["React", "TypeScript", "MongoDB", "ChakraUI"]
+  },
+  {
+    "role": "Coding Bootcamp Student 🤓",
+    "company": "School: Le Wagon",
+    "company_url": "https://www.lewagon.com/",
+    "start_date": "January 2023",
+    "end_date": "March 2023",
+    "duration": "",
+    "location": "Singapore",
+    "work_type": "On-site",
+    "role_description": [
+      "Took a sabbatical from work; Enrolled in a Software Development Bootcamp to pick up some technical skills!"
+    ],
+    "tech_stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Ruby (on Rails)",
+      "Bootstrap",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "role": "Product Manager",
+    "company": "GovTech, Open Government Products",
+    "company_url": "https://www.tech.gov.sg/",
+    "start_date": "October 2021",
+    "end_date": "November 2022",
+    "duration": "1 year",
+    "location": "Singapore",
+    "work_type": "Hybrid/ Remote",
+    "role_description": [
+      "Managed a Website Building and Hosting Platform for the Government; worked with an awesome team of Designers and Engineers to translate roadmap vision to a reality.",
+      "Oversaw the onboarding of over 330 school sites on to our platform."
+    ],
+    "tech_stack": []
+  },
+  {
+    "role": "Product Manager",
+    "company": "Economic Development Board",
+    "company_url": "https://www.edb.gov.sg/",
+    "start_date": "",
+    "end_date": "",
+    "duration": "",
+    "location": "Singapore",
+    "work_type": "On-site",
+    "role_description": [
+      "Managed the main Incentive Management System in the organisation.",
+      "Had the opportunity to be seconded to Pivotal Labs (VMWare Tanzu Labs) to learn the agile practices of working in balanced teams or squads."
+    ],
+    "tech_stack": []
+  },
+  {
+    "role": "Management Associate",
+    "company": "Tan Tock Seng Hospital",
+    "company_url": "https://www.ttsh.com.sg/",
+    "start_date": "October 2021",
+    "end_date": "November 2022",
+    "duration": "",
+    "location": "Singapore",
+    "work_type": "Hybrid/ Remote",
+    "role_description": [
+      "Managed the main Appointment Booking System for the hospital, handling appointments for Specialist Outpatient Clinics (SOCs), and referrals from local Polyclinics."
+    ],
+    "tech_stack": []
+  }
+]
