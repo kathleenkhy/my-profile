@@ -18,7 +18,7 @@ export default function Details() {
   const color = useColorModeValue('gray.800', '')
 
   return (
-    <Card px={10} py={5} bg={bg}>
+    <Card px={10} py={5} bg={bg} mt={{ base: '12', md: '8' }}>
       <CardHeader>
         <Flex alignItems="center" flexDirection={{ base: 'column', md: 'row' }}>
           <Image

@@ -35,12 +35,12 @@ export default function Experience() {
         <main>
           <Container>
             <Heading
-              mt="8"
+              mt="24"
               fontWeight={600}
               fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
               lineHeight={'110%'}
             >
-              {'Experience'}
+              {'Experience 📝'}
             </Heading>
             <Box
               mt="8"

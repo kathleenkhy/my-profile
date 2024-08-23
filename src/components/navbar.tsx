@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { forwardRef } from 'react'
 import NextLink from 'next/link'
 import { MdHouse } from 'react-icons/md'
@@ -13,6 +13,8 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue,
+  Flex,
+  Text,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
@@ -35,15 +37,28 @@ MenuLink.displayName = 'MenuLink'
 
 const Navbar: React.FC<NavbarProps> = (props) => {
   const { path } = props
+  useEffect(() => {
+    const link = document.createElement('link')
+    link.href =
+      'https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap'
+    link.rel = 'stylesheet'
+    document.head.appendChild(link)
+  }, [])
 
   return (
-    <Box
-      position="sticky"
-      as="nav"
+    <Flex
+      bg={useColorModeValue('gray.100', 'gray.900')}
+      position="fixed"
+      as="header"
+      alignItems="center"
+      justifyContent="space-between"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
-      zIndex={2}
-      {...props}
+      top={0}
+      left={0}
+      boxShadow="md" // Adjust shadow as needed
+      zIndex="sticky"
+      px={4}
+      h={16}
     >
       <Container
         display="flex"
@@ -57,16 +72,23 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             href="/"
             style={{ textDecoration: 'none', cursor: 'pointer' }}
           >
-            <Box as={MdHouse} size="40px" />
+            <Text
+              as="span"
+              fontSize="2xl"
+              fontWeight="bold"
+              fontFamily="'Shadows Into Light'"
+              color={useColorModeValue('teal.600', 'teal.100')}
+              cursor="pointer"
+              style={{ textDecoration: 'none' }}
+            >
+              Kathleen
+            </Text>
           </NextLink>
         </Stack>
         <Stack
-          // direction={{ base: 'column' }}
           flexDir={'column'}
-          // display={{ base: 'none', md: 'flex' }}
           width="full"
           alignItems="flex-end"
-          // // flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
           <Box>
@@ -107,7 +129,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           </Box>
         </Stack>
       </Container>
-    </Box>
+    </Flex>
   )
 }
 
