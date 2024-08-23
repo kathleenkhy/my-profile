@@ -46,7 +46,7 @@ export default function Details() {
           with background in product management and some software development.
           I&apos;m passionate about building scalable and efficient systems to
           create an impact for public good. <br /> <br />
-          In my free time, I enjoy watching musical and plays, as well as
+          In my free time, I enjoy watching musicals and plays, as well as
           playing boardgames (some personal favourites include Dominion and
           Cascadia)!
         </Text>
