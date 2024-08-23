@@ -12,6 +12,8 @@ import {
   useColorModeValue,
   Text,
   VStack,
+  Button,
+  useColorMode,
 } from '@chakra-ui/react'
 import { Link } from '@opengovsg/design-system-react'
 import experienceDetails from '../data/experience.json'
@@ -19,14 +21,11 @@ import React from 'react'
 import Header from '~/components/About'
 import Navbar from '~/components/navbar'
 import { MdVerified } from 'react-icons/md'
-
-interface CustomTextProps {
-  firstTitle: string
-  secondTitle: string
-  textIcon: string
-}
+import ScrollToTop from 'react-scroll-to-top'
 
 export default function Experience() {
+  const { colorMode } = useColorMode()
+
   return (
     <React.Fragment>
       <Box>
@@ -163,6 +162,16 @@ export default function Experience() {
                         </Flex>
                       </Box>
                     </Flex>
+                    <ScrollToTop
+                      smooth
+                      color="teal"
+                      style={{
+                        boxShadow:
+                          colorMode === 'light'
+                            ? '0px 4px 6px rgba(0, 0, 0, 0.1)'
+                            : 'none',
+                      }}
+                    />
                   </Flex>
                 )
               })}
