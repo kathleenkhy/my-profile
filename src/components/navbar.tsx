@@ -115,14 +115,6 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                   <MenuItem as={NextLink} href="/contact">
                     Contact
                   </MenuItem>
-                  <MenuItem
-                    as="a"
-                    href="https://www.linkedin.com/in/kathleenkohhuiying/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LinkedIn
-                  </MenuItem>
                 </MenuList>
               </Menu>
             </Box>
