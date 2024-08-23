@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 
 const profile = {
-  headerName: `Hello, I'm Kathleen`,
+  headerName: `Hi, I'm Kathleen 👋`,
   headerRole: `I'm a Product Owner`,
   headerDesc: 'Currently working on EDUCARE in Boston Scientific',
   link: '/about',
