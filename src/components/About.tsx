@@ -33,7 +33,7 @@ export default function Header() {
             {profile.headerName} <br />
             <Text
               as={'span'}
-              color={useColorModeValue('teal.600', 'teal.100')}
+              color={useColorModeValue('teal.600', 'teal.300')}
               mt={2}
             >
               {profile.headerRole}
