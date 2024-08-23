@@ -89,11 +89,19 @@ export default function Experience() {
                       flexDirection="column"
                       mt={10}
                     >
-                      {/* <Box alignSelf="left">
-                        <Text textAlign={'left'}>
-
-                        </Text>
-                      </Box> */}
+                      <Box alignSelf="left">
+                        <Image
+                          textAlign={'left'}
+                          src={item.image}
+                          alt="company logo"
+                          width="170"
+                          height="59"
+                          my={4}
+                          bg={'white'}
+                          p={2}
+                          borderRadius={10}
+                        />
+                      </Box>
                       <Box
                         borderRadius="base"
                         p="4"

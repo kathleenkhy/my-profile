@@ -7,6 +7,7 @@ import Skills from '~/components/Skills'
 import Projects from '~/components/Projects'
 import Contact from '~/components/Contact'
 import NextLink from 'next/link'
+import Navbar from '~/components/navbar'
 
 export default function PortfolioPage() {
   return (

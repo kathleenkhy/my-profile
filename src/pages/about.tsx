@@ -25,8 +25,6 @@ export default function About() {
         <VStack align="stretch" spacing={8}>
           <Hero />
           <Details />
-        </VStack>
-        <VStack my="12">
           <Contact />
         </VStack>
       </Container>

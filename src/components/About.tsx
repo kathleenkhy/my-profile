@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 
 const profile = {
-  headerName: `Hi there, I'm Kathleen`,
+  headerName: `Hello, I'm Kathleen`,
   headerRole: `I'm a Product Owner`,
   headerDesc: 'Currently working on EDUCARE in Boston Scientific',
   link: '/about',
@@ -33,7 +33,7 @@ export default function Header() {
         >
           <Heading
             fontWeight={600}
-            fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+            fontSize={{ base: '34px', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}
           >
             {profile.headerName} <br />
