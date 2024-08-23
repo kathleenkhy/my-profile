@@ -18,7 +18,12 @@ export default function Details() {
   const color = useColorModeValue('gray.800', '')
 
   return (
-    <Card px={10} py={5} bg={bg} mt={{ base: '12', md: '8' }}>
+    <Card
+      px={{ base: '4', md: '8' }}
+      py={5}
+      bg={bg}
+      mt={{ base: '12', md: '8' }}
+    >
       <CardHeader>
         <Flex alignItems="center" flexDirection={{ base: 'column', md: 'row' }}>
           <Image
@@ -34,7 +39,7 @@ export default function Details() {
         </Flex>
       </CardHeader>
       <CardBody bg={bg}>
-        <Text color={color}>
+        <Text color={color} textAlign={'justify'}>
           Hi there! I&apos;m currently a Product Owner for{' '}
           <Link
             href="https://educare.bostonscientific.com/apac/s/?language=en_US&sc=apac"
