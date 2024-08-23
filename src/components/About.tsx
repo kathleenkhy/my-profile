@@ -24,25 +24,23 @@ export default function Header() {
   return (
     <>
       <Container maxW={'3xl'} id="hero" mt={'48px'}>
-        <Stack
-          as={Box}
-          textAlign={'center'}
-          spacing={{ base: 6, md: 10 }}
-          // pb={{ base: 20, md: 36 }}
-          // pt={{ base: 36, md: 52 }}
-        >
+        <Stack as={Box} textAlign={'center'} spacing={{ base: 6, md: 10 }}>
           <Heading
             fontWeight={600}
             fontSize={{ base: '34px', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}
           >
             {profile.headerName} <br />
-            <Text as={'span'} color="teal" mt={2}>
+            <Text
+              as={'span'}
+              color={useColorModeValue('teal.600', 'teal.100')}
+              mt={2}
+            >
               {profile.headerRole}
             </Text>
           </Heading>
           <Text
-            color={'gray.500'}
+            color={useColorModeValue('grey.100', 'grey.100')}
             fontSize={{ base: 'lg', sm: 'xl', md: '2xl' }}
           >
             {profile.headerDesc}
