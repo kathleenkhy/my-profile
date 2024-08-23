@@ -11,7 +11,10 @@ import {
   chakra,
   Image,
   useColorModeValue,
+  Button,
+  Stack,
 } from '@chakra-ui/react'
+import { moreButton } from './About'
 
 export default function Projects() {
   const Logos = chakra(Image, {
@@ -91,6 +94,25 @@ export default function Projects() {
           </TabPanel>
         </TabPanels>
       </Tabs>
+      <Stack
+        direction={'column'}
+        spacing={3}
+        align={'center'}
+        alignSelf={'center'}
+        position={'relative'}
+      >
+        <Button
+          bg={`teal.400`}
+          rounded={'full'}
+          px={6}
+          _hover={{
+            bg: `teal.600`,
+          }}
+          onClick={() => moreButton('/experience')}
+        >
+          Find out more about my experience!
+        </Button>
+      </Stack>
     </VStack>
   )
 }

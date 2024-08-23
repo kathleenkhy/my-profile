@@ -4,6 +4,8 @@ import { Link, Button } from '@opengovsg/design-system-react'
 import Hero from '../components/Hero'
 import Contact from '~/components/Contact'
 import Details from '~/components/Details'
+import FunFact from '~/components/Funfact'
+import Funfact from '~/components/Funfact'
 
 export default function About() {
   return (
@@ -25,6 +27,7 @@ export default function About() {
         <VStack align="stretch" spacing={8}>
           <Hero />
           <Details />
+          <Funfact />
           <Contact />
         </VStack>
       </Container>
