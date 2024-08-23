@@ -23,7 +23,7 @@ export const moreButton = (link: string): void => {
 export default function Header() {
   return (
     <>
-      <Container maxW={'3xl'} id="hero" mt={'48px'}>
+      <Container maxW={'3xl'} id="hero" mt={{ base: '64px', md: '48px' }}>
         <Stack as={Box} textAlign={'center'} spacing={{ base: 6, md: 10 }}>
           <Heading
             fontWeight={600}
