@@ -35,7 +35,7 @@ export default function Details() {
       </CardHeader>
       <CardBody bg={bg}>
         <Text color={color}>
-          Hi there! I&apos;m a currently a Product Owner for{' '}
+          Hi there! I&apos;m currently a Product Owner for{' '}
           <Link
             href="https://educare.bostonscientific.com/apac/s/?language=en_US&sc=apac"
             target="_blank"
