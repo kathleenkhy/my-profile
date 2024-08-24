@@ -48,7 +48,7 @@ export default function Details() {
           >
             EDUCARE
           </Link>{' '}
-          with background in product management and some software development.
+          with a background in product management and some software development.
           I&apos;m passionate about building scalable and efficient systems to
           create an impact for public good. <br /> <br />
           In my free time, I enjoy watching musicals and plays, as well as
