@@ -50,7 +50,7 @@ export default function Projects() {
                 href="https://isomer.gov.sg"
                 target="_blank"
                 fontWeight="bold"
-                color={'teal.400'}
+                color={useColorModeValue('teal.500', 'teal.200')}
               >
                 Isomer
               </Link>{' '}
@@ -66,7 +66,7 @@ export default function Projects() {
               href="https://fairfare.kathleen-dev.com"
               target="_blank"
               fontWeight="bold"
-              color={'teal.400'}
+              color={useColorModeValue('teal.500', 'teal.200')}
             >
               Fairfare
             </Link>
@@ -83,7 +83,7 @@ export default function Projects() {
               href="https://forms.gov.sg"
               target="_blank"
               fontWeight="bold"
-              color={'teal.400'}
+              color={useColorModeValue('teal.500', 'teal.200')}
             >
               FormSG
             </Link>
