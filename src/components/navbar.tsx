@@ -81,7 +81,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
               cursor="pointer"
               style={{ textDecoration: 'none' }}
             >
-              Kathleen
+              Kathleen.
             </Text>
           </NextLink>
         </Stack>

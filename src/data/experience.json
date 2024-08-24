@@ -7,7 +7,7 @@
     "location": "Singapore",
     "work_type": "Hybrid",
     "role_description": [
-      "Currently working on EDUCARE in APAC to improve the learning experience for Healthcare Professionals!"
+      "Currently working on EDUCARE in APAC to bring on-demand medical education to Healthcare Professionals."
     ],
     "tech_stack": []
   },
@@ -17,12 +17,12 @@
     "company_url": "https://www.open.gov.sg/",
     "image": "/ogp.png",
     "location": "Singapore",
-    "work_type": "Hybrid/ Remote",
+    "work_type": "Hybrid",
     "role_description": [
       "Dabbled with Frontend web development for to cater for payment-related features within a form builder system.",
       "Built AI-based form features (integrated with Azure OpenAI) to generate forms based on one-liner prompts or PDF uploads."
     ],
-    "tech_stack": ["React", "TypeScript", "MongoDB", "ChakraUI"]
+    "tech_stack": ["React", "TypeScript", "MongoDB", "Chakra UI"]
   },
   {
     "role": "Coding Bootcamp Student 🤓",
@@ -49,7 +49,7 @@
     "company_url": "https://www.tech.gov.sg/",
     "image": "/govtech.gif",
     "location": "Singapore",
-    "work_type": "Hybrid/ Remote",
+    "work_type": "Hybrid",
     "role_description": [
       "Managed a Website Building and Hosting Platform for the Government; worked with an awesome team of Designers and Engineers to translate roadmap vision to a reality.",
       "Oversaw the onboarding of over 330 school sites on to our platform."
@@ -75,7 +75,7 @@
     "company_url": "https://www.ttsh.com.sg/",
     "image": "/ttsh.png",
     "location": "Singapore",
-    "work_type": "Hybrid/ Remote",
+    "work_type": "On-site",
     "role_description": [
       "Managed the main Appointment Booking System for the hospital, handling appointments for Specialist Outpatient Clinics (SOCs), and referrals from local Polyclinics."
     ],

@@ -3,7 +3,7 @@ import Hero from '~/components/Hero'
 
 export default function Contact() {
   return (
-    <Container p={{ base: 4, md: 12 }} maxW="container.md">
+    <Container mt="8" p={{ base: 4, md: 12 }} maxW="container.md">
       <VStack align="stretch" spacing={8}>
         <Hero />
         <iframe
