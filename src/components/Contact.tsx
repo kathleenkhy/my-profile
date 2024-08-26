@@ -1,8 +1,6 @@
 import { Button, HStack, Heading, VStack, Link, Box } from '@chakra-ui/react'
-import { FaLinkedin } from 'react-icons/fa'
-import { IoLogoGithub } from 'react-icons/io5'
-import { MdOutlineEmail } from 'react-icons/md'
 import { MdOutlineInsertComment } from 'react-icons/md'
+import { connectionButtons } from '~/data/connectionButtons'
 
 export default function Contact() {
   return (
@@ -10,44 +8,27 @@ export default function Contact() {
       <Heading mb={3}>Find me here:</Heading>
       <Box display="flex" flexDirection={{ base: 'column', md: 'row' }}>
         <HStack>
-          <Button colorScheme="gray" size="lg">
-            <Link
-              target="_blank"
-              href="https://github.com/kathleenkhy"
-              display="inline-flex"
-              alignItems="center"
-              style={{ gap: 4 }}
-              pl={2}
-            >
-              <IoLogoGithub />
-              GitHub
-            </Link>
-          </Button>
-          <Button colorScheme="blue" size="lg">
-            <Link
-              target="_blank"
-              href="https://www.linkedin.com/in/kathleenkohhuiying/"
-              display="inline-flex"
-              alignItems="center"
-              style={{ gap: 4 }}
-              pl={2}
-            >
-              <FaLinkedin />
-              LinkedIn
-            </Link>
-          </Button>
-          <Button colorScheme="teal" size="lg">
-            <Link
-              href="mailto:kathleen.khy@gmail.com"
-              display="inline-flex"
-              alignItems="center"
-              style={{ gap: 4 }}
-              pl={2}
-            >
-              <MdOutlineEmail />
-              Email
-            </Link>
-          </Button>
+          {connectionButtons.map((connection, index) => {
+            return (
+              <Button
+                key={index}
+                colorScheme={connection.colourScheme}
+                size="lg"
+              >
+                <Link
+                  target={connection.target}
+                  href={connection.href}
+                  display="inline-flex"
+                  alignItems="center"
+                  style={{ gap: 4 }}
+                  pl={2}
+                >
+                  {connection.icon}
+                  {connection.name}
+                </Link>
+              </Button>
+            )
+          })}
         </HStack>
         <HStack
           justifyContent={{ base: 'center' }} // Center horizontally

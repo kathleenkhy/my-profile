@@ -64,7 +64,6 @@ export default function Details() {
           mt="12"
         >
           <Button
-            // colorScheme={color}
             bg={`teal.400`}
             rounded={'full'}
             px={6}
@@ -73,7 +72,7 @@ export default function Details() {
             }}
             onClick={() => moreButton('/experience')}
           >
-            Find out more about my experience!
+            Click to view my experience!
           </Button>
         </Stack>
       </CardBody>

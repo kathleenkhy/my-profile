@@ -7,4 +7,5 @@ export const funFacts = [
   "I've been trying to learn French through Duolingo. It's a pretty good app! 🇫🇷",
   'I once played laser tag in a onesie. 🔫',
   `I've donated blood 18 times. 🩸`,
+  `I enjoy a good spin class. 🚴🏻`,
 ]

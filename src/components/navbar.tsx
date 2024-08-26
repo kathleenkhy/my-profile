@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { forwardRef } from 'react'
 import NextLink from 'next/link'
-import { MdHouse } from 'react-icons/md'
 import {
   Container,
   Box,
@@ -18,6 +17,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
+import { navBar } from '~/data/connectionButtons'
 
 type NavbarProps = {
   path: string
@@ -103,18 +103,13 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                   aria-label="Options"
                 />
                 <MenuList>
-                  <MenuItem as={NextLink} href="/">
-                    Home
-                  </MenuItem>
-                  <MenuItem as={NextLink} href="/about">
-                    About
-                  </MenuItem>
-                  <MenuItem as={NextLink} href="/experience">
-                    Experience
-                  </MenuItem>
-                  <MenuItem as={NextLink} href="/contact">
-                    Contact
-                  </MenuItem>
+                  {navBar.map((item, index) => {
+                    return (
+                      <MenuItem key={index} as={NextLink} href={item.href}>
+                        {item.name}
+                      </MenuItem>
+                    )
+                  })}
                 </MenuList>
               </Menu>
             </Box>
