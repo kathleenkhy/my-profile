@@ -72,7 +72,7 @@ export default function Details() {
             }}
             onClick={() => moreButton('/experience')}
           >
-            Click to view my experience!
+            Click here to view my experience!
           </Button>
         </Stack>
       </CardBody>
