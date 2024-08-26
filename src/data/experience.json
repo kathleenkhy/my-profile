@@ -19,8 +19,8 @@
     "location": "Singapore",
     "work_type": "Hybrid",
     "role_description": [
-      "Dabbled with Frontend web development for to cater for payment-related features within a form builder system.",
-      "Built AI-based form features (integrated with Azure OpenAI) to generate forms based on one-liner prompts or PDF uploads."
+      "Dabbled with Frontend web development to cater for payment-related features within a form builder system.",
+      "Built AI-based form input features (integrated with Azure OpenAI's APIs) to generate forms based on one-liner prompts or PDF uploads."
     ],
     "tech_stack": ["React", "TypeScript", "MongoDB", "Chakra UI"]
   },
