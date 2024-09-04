@@ -46,7 +46,7 @@ export default function Details() {
             target="_blank"
             fontWeight="bold"
           >
-            EDUCARE
+            EDUCARE APAC
           </Link>{' '}
           with a background in product management software development. I&apos;m
           passionate about building scalable and efficient systems to create an
