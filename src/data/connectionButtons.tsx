@@ -52,4 +52,8 @@ export const navBar: connectionButton[] = [
     name: 'Contact',
     href: '/contact',
   },
+  {
+    name: 'Resume',
+    href: 'https://app.box.com/s/h4t5zqyw0oyx3bnbay8l4ypr38482bec',
+  },
 ]
