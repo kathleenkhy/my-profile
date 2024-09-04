@@ -105,7 +105,12 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                 <MenuList>
                   {navBar.map((item, index) => {
                     return (
-                      <MenuItem key={index} as={NextLink} href={item.href}>
+                      <MenuItem
+                        key={index}
+                        as={NextLink}
+                        href={item.href}
+                        target={item.target}
+                      >
                         {item.name}
                       </MenuItem>
                     )
