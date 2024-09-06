@@ -63,7 +63,7 @@ export default function Projects() {
           </TabPanel>
           <TabPanel>
             <Link
-              href="https://fairfare.kathleen-dev.com"
+              href="https://fairfare.kathleenkoh.com"
               target="_blank"
               fontWeight="bold"
               color={useColorModeValue('teal.500', 'teal.200')}
