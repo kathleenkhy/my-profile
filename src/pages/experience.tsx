@@ -93,8 +93,9 @@ export default function Experience() {
                           textAlign={'left'}
                           src={item.image}
                           alt="company logo"
-                          width="170"
-                          height="59"
+                          width="170px"
+                          height="59px"
+                          objectFit="contain"
                           my={4}
                           bg={'white'}
                           p={2}

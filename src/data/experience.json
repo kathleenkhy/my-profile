@@ -1,5 +1,19 @@
 [
   {
+    "role": "Technical Product Manager",
+    "company": "Johnson & Johnson",
+    "company_url": "https://www.jnj.com/",
+    "image": "/JNJ.png",
+    "location": "Singapore",
+    "work_type": "Hybrid",
+    "role_description": [
+      "Oversee product strategy for patient-facing digital portals enabling enrollment, education, reminders, and service access",
+      "Manage Patient CRM and case management solutions used by care coordinators and service vendors",
+      "Drive delivery of data and analytics platforms providing dashboards and decision support to Patient Experience leads and market teams"
+    ],
+    "tech_stack": []
+  },
+  {
     "role": "Product Owner",
     "company": "Boston Scientific",
     "company_url": "https://www.bostonscientific.com/en-US/home.html",
@@ -7,7 +21,8 @@
     "location": "Singapore",
     "work_type": "Hybrid",
     "role_description": [
-      "Currently working on EDUCARE in APAC to bring on-demand medical education to Healthcare Professionals."
+      "Worked on EDUCARE in APAC to bring on-demand medical education to Healthcare Professionals.",
+      "Managed campaigns with Salesforce and Marketing Cloud to automate emails and plan multi-channel campaigns to optimize client engagement."
     ],
     "tech_stack": []
   },

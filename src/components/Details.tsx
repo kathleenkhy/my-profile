@@ -40,17 +40,13 @@ export default function Details() {
       </CardHeader>
       <CardBody bg={bg}>
         <Text color={color} textAlign={'justify'}>
-          Hi there! I&apos;m currently a Product Owner for{' '}
-          <Link
-            href="https://educare.bostonscientific.com/apac/s/?language=en_US&sc=apac"
-            target="_blank"
-            fontWeight="bold"
-          >
-            EDUCARE APAC
+          Hi there! I&apos;m currently a Technical Product Manager in{' '}
+          <Link href="https://www.jnj.com/" target="_blank" fontWeight="bold">
+            Johnson & Johnson
           </Link>{' '}
-          in Boston Scientific with a background in product management and
-          software development. I&apos;m passionate about building scalable and
-          efficient systems to create an impact for public good. <br /> <br />
+          with a background in product management and software development.
+          I&apos;m passionate about building scalable and efficient systems to
+          create an impact for public good. <br /> <br />
           In my free time, I enjoy watching musicals and plays, as well as
           playing boardgames (some personal favourites include Dominion and
           Cascadia)!
