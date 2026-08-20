@@ -14,7 +14,7 @@ const profile = {
   headerName: `Hi, I'm Kathleen 👋`,
   headerRole: `I'm a Technical Product Manager`,
   headerDesc:
-    'Currently managing digital product strategy for Patient Experience at J&J',
+    'Currently managing digital product strategy for Patient Experience at J&J.',
   link: '/about',
 }
 export const moreButton = (link: string): void => {
